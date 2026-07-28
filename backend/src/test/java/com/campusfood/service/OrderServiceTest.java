@@ -51,8 +51,6 @@ class OrderServiceTest {
         food.setId(1L);
         when(foodService.getForOrder(1L)).thenReturn(food);
         when(foodRepository.save(any(FoodItem.class))).thenAnswer(invocation -> invocation.getArgument(0));
-        when(orderRepository.save(any(OrderEntity.class))).thenAnswer(invocation -> invocation.getArgument(0));
-
         OrderEntity saved = new OrderEntity();
         saved.setId(100L);
         when(orderRepository.save(any(OrderEntity.class))).thenReturn(saved);
@@ -66,4 +64,3 @@ class OrderServiceTest {
         assertEquals(3, food.getStock());
     }
 }
-
