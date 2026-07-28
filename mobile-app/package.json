@@ -1,0 +1,18 @@
+{
+  "name": "campus-food-mobile-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:h5": "uni -p h5",
+    "build:app": "uni build -p app",
+    "build:h5": "uni build -p h5"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-alpha-5020220260725001",
+    "vue": "3.4.21"
+  },
+  "devDependencies": {
+    "@dcloudio/vite-plugin-uni": "3.0.0-alpha-5020220260725001",
+    "vite": "5.2.8"
+  }
+}

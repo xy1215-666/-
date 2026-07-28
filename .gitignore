@@ -1,0 +1,16 @@
+**/target/
+**/node_modules/
+**/dist/
+**/.idea/
+**/.vscode/
+*.iml
+.env
+*.log
+test-results/
+playwright-report/
+allure-results/
+screenshots/
+coverage/
+__pycache__/
+.pytest_cache/
+
